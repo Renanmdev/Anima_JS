@@ -1,0 +1,28 @@
+<html>
+    <body>
+        <style>
+           .box{
+               width: 100px;
+               height: 100px;
+               background-color: rebeccapurple;
+               margin-left: 0;
+           }
+
+           .animaEsquerda{
+               transition: 1s;
+               margin-left: 90px;
+               margin-top: 20px;
+               background-color: green;
+           }
+        </style>
+        <div class="box"></div>
+
+        <script>
+            var box = document.querySelectorAll('.box')[0];
+
+            setTimeout(() => {
+                 box.classList.add('animaEsquerda');
+            }, 2000);
+        </script>
+    </body>
+</html>
